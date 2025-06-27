@@ -8,6 +8,7 @@ func SplitIntoLines(s string) []string {
 	for i < n {
 		if s[i] == '\n' {
 			results = append(results, "\n")
+			i++
 		} else {
 			j := i + 1
 			for j < n && s[j] != '\n' {
